@@ -8,9 +8,9 @@ st.set_page_config(page_title="EW2 Project")
 st.title("EW2 Project")
 
 form = st.form(key='my-form')
-p1 = form.text_input('Process1')
-p2 = form.text_input('Process2')
-p3 = form.text_input('Process3')
+p1 = form.selectbox('Process1', ('tt_lp_bjt', 'ff_lp_bjt', 'ss_lp_bjt'))
+p2 = form.selectbox('Process2', ('tt_lp_rvt12', 'ff_lp_rvt12', 'ss_lp_rvt12'))
+p3 = form.selectbox('Process3', ('tt_lp_io25', 'ff_lp_io25', 'ss_lp_io25'))
 temperature = form.number_input('Temperature')
 v_supply = form.number_input('V-supply')
 
